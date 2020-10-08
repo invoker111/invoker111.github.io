@@ -1,0 +1,21 @@
+{
+    "name": "测试",
+    "describe": "nothing",
+    "copyright": "2019-2020",
+    "github": "https://github.com/",
+    "bilibili": "https://space.bilibili.com/",
+    "email": "mailto:your email",
+    "backgroundImg": false,
+    "sticker": [
+        {
+            "name": "阿鲁",
+            "folder": "aru",
+            "count": 143
+        },
+        {
+            "name": "小黄脸",
+            "folder": "yellow-face",
+            "count": 71
+        }
+    ]
+}

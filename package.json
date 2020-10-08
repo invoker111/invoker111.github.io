@@ -1,0 +1,61 @@
+{
+  "name": "yunyuyuan-gitpage",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "axios": "^0.20.0",
+    "babel-eslint": "^10.1.0",
+    "codemirror": "~5.58.0",
+    "dayjs": "^1.8.36",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-saver": "^2.0.2",
+    "headroom.js": "^0.11.0",
+    "highlight.js": "^10.2.0",
+    "jszip": "^3.5.0",
+    "md5": "^2.3.0",
+    "node-sass": "^4.14.1",
+    "octokat": "^0.10.0",
+    "qrcode": "^1.4.4",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "sass.js": "^0.11.1",
+    "showdown": "^1.9.1",
+    "svg-sprite-loader": "^5.0.0",
+    "text-loader": "^0.0.1",
+    "vue-router": "^3.4.3",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.5.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

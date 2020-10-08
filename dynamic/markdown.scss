@@ -1,0 +1,196 @@
+// 别删除 .--markdown，修改它包裹的内容
+.--markdown {
+  width: 100%;
+  display: block;
+  word-break: break-word;
+  @each $size in 1, 2, 3, 4, 5, 6{
+    h#{$size}{
+      color: rgb(255, 82, 24);
+      font-size: 0.8rem/$size + 0.8rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  hr{
+    width: 100%;
+    background: black;
+  }
+  p{
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+    white-space: pre-line;
+  }
+  a[href]{
+    display: inline-block;
+    color: rgb(0, 8, 255);
+    position: relative;
+    margin: 0 0.3rem;
+    word-break: break-all;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    object-fit: contain;
+
+    &[alt=sticker] {
+      display: inline-block;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0 0.3rem -0.2rem 0.3rem;
+    }
+  }
+  input[type=checkbox]{
+    margin: 0 0.5rem !important;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: transparent !important;
+    border: 1px solid #434343;
+    appearance: none;
+    line-height: inherit;
+    &:checked{
+      background: #86ffe4 !important;
+    }
+  }
+  strong{
+    margin: 0 0.3rem;
+  }
+  blockquote{
+    line-height: 1.8rem;
+    position: relative;
+    border-left: 0.3rem solid;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 0.6rem;
+    background: rgb(226, 226, 226);
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+  table {
+    width: 90%;
+    margin: 1rem auto;
+
+    tr {
+      td {
+      }
+    }
+
+    thead {
+    }
+
+    tbody {
+    }
+  }
+
+  ul{
+    > li:not(.task-list-item):before{
+      content: '';
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 35%;
+      top: 0.4rem;
+      background: black;
+      border: 0.2rem solid;
+    }
+  }
+
+  ol{
+    counter-reset: xx 0;
+    > li:before{
+      content: counter(xx) ".";
+      counter-increment: xx;
+      display: block;
+      font-size: 1em;
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  ul, ol{
+    list-style: none;
+    padding: 0 0 0 2rem;
+
+    > li:before {
+      position: absolute;
+      left: -2rem;
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  code {
+    font-family: "Source Code Pro", serif;
+  }
+
+  pre {
+    > code.hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.3rem;
+      background: rgba(43, 43, 43, 0.95);
+      max-height: 100vh;
+      font-size: 0.85rem;
+      line-height: 1.4rem;
+
+      &, .hljs-subst {
+        color: rgb(222, 222, 222)
+      }
+
+      .hljs-comment {
+        color: rgb(136, 136, 136)
+      }
+
+      .hljs-keyword, .hljs-attribute, .hljs-selector-tag, .hljs-meta-keyword, .hljs-doctag, .hljs-name {
+        font-weight: bold;
+        color: rgb(255, 123, 60);
+      }
+
+      .hljs-type, .hljs-string, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+        color: rgb(126, 197, 85)
+      }
+
+      .hljs-number {
+        color: rgb(90, 161, 255);
+      }
+
+      .hljs-title, .hljs-section {
+        color: rgb(255, 198, 109);
+        font-weight: bold
+      }
+
+      .hljs-regexp, .hljs-symbol, .hljs-variable, .hljs-template-variable, .hljs-link, .hljs-selector-attr, .hljs-selector-pseudo {
+        color: rgb(255, 225, 62);
+      }
+
+      .hljs-literal {
+        color: rgb(120, 169, 96)
+      }
+
+      .hljs-built_in, .hljs-bullet, .hljs-code, .hljs-addition {
+        color: rgb(231, 134, 255);
+      }
+
+      .hljs-meta {
+        color: rgb(241, 235, 51)
+      }
+
+      .hljs-meta-string {
+        color: rgb(77, 153, 191)
+      }
+
+      .hljs-emphasis {
+        font-style: italic
+      }
+
+      .hljs-strong {
+        font-weight: bold
+      }
+
+    }
+  }
+}
